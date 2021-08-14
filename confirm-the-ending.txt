@@ -1,0 +1,14 @@
+function confirmEnding(str, target) {
+    var tLen=target.length
+    var sLen=str.length
+    console.log(tLen)
+    var i,j=0;
+    for (i = sLen-tLen ; i < sLen; i++) {
+    if(str[i]!=target[j++]){
+      return false
+     }
+    }
+    return true
+}
+
+console.log(confirmEnding("Bastian", "n"))

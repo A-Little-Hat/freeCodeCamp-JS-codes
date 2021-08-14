@@ -1,0 +1,4 @@
+const sum = (...args) => {
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  return args.reduce((a, b) => a + b, 0);
+}

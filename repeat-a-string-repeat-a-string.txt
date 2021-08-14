@@ -1,0 +1,18 @@
+function repeatStringNumTimes(str, num) {
+  var s=""
+  if(num<1){
+    console.log('a')
+  }
+  if(num==1){
+    console.log('b')
+    return str
+  }else{
+    console.log('c')
+    for(var i=1;i<=num;i++){
+      s+=str
+    }
+  }
+  return s;
+}
+
+console.log(repeatStringNumTimes("abc", 3))
